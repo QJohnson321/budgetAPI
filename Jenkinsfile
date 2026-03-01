@@ -7,14 +7,22 @@ pipeline {
   }
 
   stages {
+
     stage('Checkout') {
-      steps { checkout scm }
+      steps {
+        checkout scm
+      }
     }
 
     stage('Build + Unit Tests') {
       steps {
-        bat 'java -version'
-        bat 'mvn -B clean test'
+        bat 'mvn -B clean package'
+      }
+    }
+
+    stage('Build Docker Image') {
+      steps {
+        bat 'docker build -t budgetapi:latest .'
       }
     }
   }
