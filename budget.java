@@ -1,4 +1,4 @@
-package com.example.demo;
+package org.example.budget_tracker;
 import java.util.Scanner;
 
 

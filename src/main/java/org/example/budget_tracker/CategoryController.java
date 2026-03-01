@@ -1,10 +1,9 @@
-package com.example.demo;
-import com.example.demo.dto.CategoryRequest;
-import jakarta.validation.Valid;
+package org.example.budget_tracker;
+import org.example.budget_tracker.dto.CategoryRequest;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.RequestEntity;
 import org.springframework.web.bind.annotation.*;
-import java.net.URI;
+import org.example.budget_tracker.CategoryRepository;
+
 import java.util.List;
 
 @RestController

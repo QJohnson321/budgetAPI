@@ -1,4 +1,4 @@
-package com.example.demo;
+package org.example.budget_tracker;
 
 import com.example.demo.dto.ExpenseRequest;
 import org.springframework.cglib.core.Local;

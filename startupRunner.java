@@ -1,4 +1,4 @@
-package com.example.demo;
+package org.example.budget_tracker;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;

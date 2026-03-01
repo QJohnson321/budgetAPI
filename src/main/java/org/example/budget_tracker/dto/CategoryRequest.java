@@ -1,4 +1,4 @@
-package org.example.budget_tracker;
+package org.example.budget_tracker.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
