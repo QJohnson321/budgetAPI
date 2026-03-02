@@ -32,4 +32,5 @@ class CategoryControllerTest {
 
         assertThrows(RuntimeException.class, () -> controller.create(badCategory));
     }
+
 }
