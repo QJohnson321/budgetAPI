@@ -36,6 +36,17 @@ import java.time.LocalDate;
             public Category getCategory() {return category;}
             public void setCategory(Category category) {this.category = category;}
 
+            private String username;
+                public String getUsername() {
+                    return username;
+                }
+
+                public void setUsername(String username) {
+                    this.username = username;
+                }
+
+
+
 
 
     }

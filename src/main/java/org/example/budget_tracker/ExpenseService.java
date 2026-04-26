@@ -1,17 +1,22 @@
 package org.example.budget_tracker;
 
-import com.example.demo.dto.ExpenseRequest;
+import org.example.budget_tracker.dto.ExpenseRequest;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
 import java.util.List;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 @Service
 public class ExpenseService {
 
     private final ExpenseRepository expenseRepo;
     private final CategoryRepository categoryRepo;
+    private static final Logger logger = LoggerFactory.getLogger(ExpenseService.class);
+
 
     public ExpenseService(ExpenseRepository expenseRepo, CategoryRepository categoryRepo) {
         this.expenseRepo = expenseRepo;
@@ -55,12 +60,26 @@ public class ExpenseService {
     }
 
     public List<Expense> list(LocalDate from, LocalDate to, Long categoryId) {
+        logger.info("Loading expenses. From: {}, To: {}, Category ID: {}", from, to, categoryId);
+
+        /*
         if(to == null) to = LocalDate.now();
         if(from == null) from = to.minusDays(30);
+         */
 
-        return (categoryId == null)
+        if (categoryId == null) {
+            logger.info("Loading all expenses");
+            return expenseRepo.findAll();
+        }
+
+        logger.info("Loading expenses filtered by category ID: {}", categoryId);
+        return expenseRepo.findByCategoryId(categoryId);
+
+        /*return (categoryId == null)
                 ? expenseRepo.findByDateBetween(from, to)
                 : expenseRepo.findByCategoryIdAndDateBetween(categoryId, from, to);
+
+         */
     }
 
     private Category resolveCategory(ExpenseRequest req) {

@@ -1,5 +1,5 @@
 package org.example.budget_tracker;
-import com.example.demo.dto.ExpenseRequest;
+import org.example.budget_tracker.dto.ExpenseRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import java.net.URI;

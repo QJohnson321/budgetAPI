@@ -1,5 +1,3 @@
-org\example\budget_tracker\CategoryControllerTest.class
 org\example\budget_tracker\Main.class
-org\example\budget_tracker\ExpenseRepository.class
 org\example\budget_tracker\budget.class
 org\example\budget_tracker\login.class

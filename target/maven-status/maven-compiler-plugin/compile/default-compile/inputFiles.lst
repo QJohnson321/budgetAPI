@@ -3,4 +3,10 @@ C:\budgetAPI\src\main\java\org\example\budget_tracker\CategoryController.java
 C:\budgetAPI\src\main\java\org\example\budget_tracker\CategoryRepository.java
 C:\budgetAPI\src\main\java\org\example\budget_tracker\DemoApplication.java
 C:\budgetAPI\src\main\java\org\example\budget_tracker\dto\CategoryRequest.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\dto\ExpenseRequest.java
 C:\budgetAPI\src\main\java\org\example\budget_tracker\Expense.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\ExpenseController.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\ExpensePageController.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\ExpenseRepository.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\ExpenseService.java
+C:\budgetAPI\src\main\java\org\example\budget_tracker\LoginController.java

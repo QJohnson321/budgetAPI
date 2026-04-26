@@ -1,6 +1,11 @@
 org\example\budget_tracker\dto\CategoryRequest.class
-org\example\budget_tracker\Expense.class
-org\example\budget_tracker\CategoryController.class
 org\example\budget_tracker\Category.class
 org\example\budget_tracker\DemoApplication.class
+org\example\budget_tracker\dto\ExpenseRequest.class
+org\example\budget_tracker\ExpenseService.class
+org\example\budget_tracker\ExpenseController.class
+org\example\budget_tracker\ExpenseRepository.class
+org\example\budget_tracker\Expense.class
+org\example\budget_tracker\CategoryController.class
+org\example\budget_tracker\ExpensePageController.class
 org\example\budget_tracker\CategoryRepository.class
